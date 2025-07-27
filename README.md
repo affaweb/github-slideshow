@@ -1,13 +1,20 @@
-# Your GitHub Learning Lab Repository for Introducing GitHub
+# Minsk Housing Maintenance Contracts Service
 
-Welcome to **your** repository for your GitHub Learning Lab course. This repository will be used during the different activities that I will be guiding you through. See a word you don't understand? We've included an emoji 📖 next to some key terms. Click on it to see its definition.
+This repository contains a simple example of a web service for storing and managing housing maintenance contracts for the municipal districts of Minsk.
 
-Oh! I haven't introduced myself...
+The project is split into two parts:
 
-I'm the GitHub Learning Lab bot and I'm here to help guide you in your journey to learn and master the various topics covered in this course. I will be using Issue and Pull Request comments to communicate with you. In fact, I already added an issue for you to check out.
+- `backend/` – a small Node.js HTTP server that serves contract data and a basic dashboard. It stores data in JSON files for each of the 9 districts and a city-wide file for the supervisor.
+- `frontend/` – a very small React demo (loaded from a CDN) that interacts with the backend API and displays a basic dashboard per district.
 
-![issue tab](https://lab.github.com/public/images/issue_tab.png)
+## Running locally
 
-I'll meet you over there, can't wait to get started!
+1. Start the backend server:
+   ```bash
+   node backend/index.js
+   ```
+   The server listens on `http://localhost:3000`.
 
-This course is using the :sparkles: open source project [reveal.js](https://github.com/hakimel/reveal.js/). In some cases we’ve made changes to the history so it would behave during class, so head to the original project repo to learn more about the cool people behind this project.
+2. Open the dashboard in a browser at `http://localhost:3000`.
+
+This is just a minimal demonstration to illustrate the project layout.
